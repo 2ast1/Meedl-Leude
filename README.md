@@ -13,7 +13,7 @@
 | `/status`      | ✅                        | -            |
 | `/bastard`     | ✅                        | -            |
 | `/setstatus`   | ❌                        | `meedlleude.setstatus` |
-| `/removestatus`| ❌                        | `meedlleude.setstatus` |
+| `/removestatus`| ✅                        | -            |
 | `/serverhealth`| ❌                        | `meedlleude.health` |
 | `/inventory`   | ❌                        | `meedlleude.inventory` |
 | `/enderchest`  | ❌                        | `meedlleude.enderchest` |
