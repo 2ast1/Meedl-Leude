@@ -1,0 +1,32 @@
+name: Meedl-Leude
+version: '1.0 Release'
+main: de.basti.main.MeedlLeude
+api-version: '1.21'
+load: STARTUP
+authors: [ Basti ]
+website: bttlr.de
+commands:
+  status:
+    description: Sehe deinen Status oder den von einem Mitspieler ein.
+  bastard:
+    description: hmm
+  setstatus:
+    description: Setzt deinen Status oder den von einem Mitspieler.
+  removestatus:
+    description: Entfernt den Status ohne einen neuen zusetzen.
+  serverhealth:
+    description: Zeigt aktuelle Server Informationen auf.
+  inventory:
+    description: Öffnet das Inventar des angebenen Spielers.
+  enderchest:
+    description: Öffnet die Enderchest des angebenen Spielers.
+  regeln:
+    description: Zeigt die Regeln an.
+  mute:
+    description: Schaltet einen Spieler stumm.
+  unmute:
+    description: Gibt einen Spieler für den Chat frei.
+  ban:
+    description: Bannt einen Spieler.
+  unban:
+    description: Entbannt einen Spieler.
