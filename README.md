@@ -5,13 +5,6 @@
 
 ---
 
-## Hauptfunktion
-
-### `/status`
-Zeigt den aktuellen Status des Spielers an.
-
----
-
 ## Befehle und Berechtigungen
 
 | Befehl         | Nutzbar ohne Berechtigung | Berechtigung |
