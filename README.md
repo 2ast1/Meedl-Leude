@@ -1,6 +1,6 @@
 # Meedl-Leude Minecraft Plugin
 
-**Aktuelle Version:** 1.1 Beta
+**Aktuelle Version:** 1.2 Beta
 
 **Beschreibung:** Ein vielseitiges Admin-Plugin für Minecraft, das Statusverwaltung, Inventarverwaltung, Spielerverwaltung und Serverinformationen ermöglicht.
 
