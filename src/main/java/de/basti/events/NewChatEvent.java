@@ -122,7 +122,7 @@ public class NewChatEvent implements Listener {
                 .replace("{ss}", ss + "§r");
 
         String finalSandboxms = sandboxms;
-        AutoMod.checkMessage(p, realmsg);
+
 
         Bukkit.getScheduler().runTask(MeedlLeude.getInstance(), () -> {
             Component comp = net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer
@@ -131,6 +131,8 @@ public class NewChatEvent implements Listener {
 
             Bukkit.broadcast(comp);
         });
+
+        AutoMod.checkMessage(p, realmsg);
 
     }
 

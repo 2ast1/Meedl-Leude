@@ -1,5 +1,5 @@
 name: Meedl-Leude
-version: '1.0 Release'
+version: '1.2 Beta'
 main: de.basti.main.MeedlLeude
 api-version: '1.21'
 load: STARTUP
@@ -30,3 +30,5 @@ commands:
     description: Bannt einen Spieler.
   unban:
     description: Entbannt einen Spieler.
+  automod:
+    description: Zeigt die Spieler eigenen Automod Werte auf oder für Operatoren die von anderen Spielern.

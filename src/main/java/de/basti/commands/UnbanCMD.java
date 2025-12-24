@@ -1,5 +1,6 @@
 package de.basti.commands;
 
+import de.basti.util.AutoMod;
 import de.basti.util.DataManager;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -33,14 +34,9 @@ public class UnbanCMD implements CommandExecutor {
             return true;
         }
 
-        unban(sender, uuidfromfiles, args[0]);
+        AutoMod.unban(sender, uuidfromfiles, args[0]);
 
         return true;
-    }
-
-    public void unban(CommandSender sender, String uuid, String targetname) {
-        DataManager.delete("automod", "playerdata.yml", uuid + ".ban.isbanned");
-        sender.sendMessage("§aDu hast " + targetname + " erfolgreich entbannt.");
     }
 
 }

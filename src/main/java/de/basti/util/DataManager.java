@@ -78,6 +78,18 @@ public class DataManager {
             set("automod","settings.yml", "settings.chat.scan", true);
         }
 
+        if (!checkIfExist("automod","settings.yml","settings.chat.strikes.limit")) {
+            set("automod","settings.yml", "settings.chat.strikes.limit", 5);
+        }
+
+        if (!checkIfExist("automod","settings.yml","settings.chat.strikes.exceeded.type")) {
+            set("automod","settings.yml", "settings.chat.strikes.exceeded.type", "mute");
+        }
+
+        if (!checkIfExist("automod","settings.yml","settings.chat.strikes.exceeded.duration")) {
+            set("automod","settings.yml", "settings.chat.strikes.exceeded.duration", 1);
+        }
+
         if (!checkIfExist("automod","badwords.yml","chat.badwords")) {
             java.util.List<String> defaults = java.util.Arrays.asList(
                     "Nigger",

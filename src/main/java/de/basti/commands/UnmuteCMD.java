@@ -39,10 +39,15 @@ public class UnmuteCMD implements CommandExecutor {
             return true;
         }
 
-        DataManager.delete("automod","playerdata.yml",target.getUniqueId() + ".mute.ismuted");
+        DataManager.set("automod","playerdata.yml",target.getUniqueId() + ".mute.ismuted", false);
+        DataManager.set("automod","playerdata.yml",target.getUniqueId() + ".chat.strikes", 0);
 
-        sender.sendMessage("§aDu hast " + target.getName() + " unmuted.");
-        target.sendMessage("§aDu wurdest wieder für den Chat freigegeben.");
+        if (sender == target) {
+            sender.sendMessage("§aDu hast dich wieder für den Chat freigegeben.");
+        } else {
+            sender.sendMessage("§aDu hast " + target.getName() + " unmuted.");
+            target.sendMessage("§aDu wurdest wieder für den Chat freigegeben.");
+        }
 
         return true;
     }

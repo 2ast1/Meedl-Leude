@@ -5,10 +5,7 @@ import de.basti.events.MotdEvent;
 import de.basti.events.NewChatEvent;
 import de.basti.events.OnJoinEvent;
 import de.basti.util.DataManager;
-import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.scoreboard.Scoreboard;
-import org.bukkit.scoreboard.ScoreboardManager;
 
 import java.util.Objects;
 import java.util.logging.Level;
@@ -41,6 +38,7 @@ public final class MeedlLeude extends JavaPlugin {
         Objects.requireNonNull(getCommand("unmute")).setExecutor(new UnmuteCMD());
         Objects.requireNonNull(getCommand("ban")).setExecutor(new BanCMD());
         Objects.requireNonNull(getCommand("unban")).setExecutor(new UnbanCMD());
+        Objects.requireNonNull(getCommand("automod")).setExecutor(new AutoModCMD());
 
         getLogger().log(Level.INFO,"Befehle geladen.");
 

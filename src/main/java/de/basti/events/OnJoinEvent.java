@@ -1,5 +1,6 @@
 package de.basti.events;
 
+import de.basti.util.AutoMod;
 import de.basti.util.DataManager;
 import de.basti.util.TablistPrefixManager;
 import net.kyori.adventure.text.Component;
@@ -32,8 +33,7 @@ public class OnJoinEvent implements Listener {
                 p.kick(Component.text("§cDu bist Permanent gebannt!\n\n\nGrund:\n\n" + DataManager.getString("automod","playerdata.yml",p.getUniqueId() + ".ban.reason")));
             } else {
                 if(isTodayOrPast(banDate)) {
-                    DataManager.delete("automod", "playerdata.yml",p.getUniqueId() + ".ban.isbanned");
-                    DataManager.delete("automod", "playerdata.yml",p.getUniqueId() + ".ban.end");
+                    AutoMod.sUnban(event.getPlayer().getUniqueId().toString());
 
                     p.sendMessage("§aWillkommen zurück, du bist wieder entbannt.");
 
